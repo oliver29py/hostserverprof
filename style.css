@@ -1,0 +1,217 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos específicos para elementos HTML e body */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+}
+
+/* Seu estilo personalizado continua abaixo deste ponto */
+/* ... */
+
+/* Header */
+header {
+    width: 15%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Logo */
+.logo-imagem {
+    width: 60px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.logo-imagem img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    color: blue;
+}
+
+/* Link personalizado */
+.logo-texto a {
+    text-decoration: none;
+    color: rgb(38, 0, 255);
+    transition: color 0.3s ease;
+}
+
+/* Estilos para o texto "ol1ver" */
+.ol1ver-texto {
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+
+/* Estilos para o texto "ol1ver" quando o mouse está sobre o link */
+.logo-texto a:hover .ol1ver-texto {
+    color: rgb(0, 0, 255);
+}
+
+/* Estilos para o texto "the" quando o mouse está sobre o link */
+.logo-texto a:hover {
+    color: white;
+}
+
+/* Menu */
+/* Menu */
+.menu {
+    position: fixed;
+    top: 20px; /* Distância do topo da tela */
+    right: 200px; /* Distância da direita da tela */
+}
+
+.menu ul {
+    list-style: none;
+    display: flex; /* Exibe os itens do menu em linha */
+}
+
+.menu li {
+    margin-right: 20px; /* Espaço entre os itens */
+}
+
+.menu li:last-child {
+    margin-right: 0; /* Remove a margem do último item para evitar espaçamento extra */
+}
+
+.menu li a {
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(38, 0, 255);
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+/* Estilos para os itens do menu quando o mouse está sobre eles */
+.menu li a:hover {
+    color: white;
+}
+
+/* Body */
+body {
+    position: relative;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("");
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Container */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Card */
+.card {
+    position: absolute;
+    margin-left: 20px;
+    left: 20px;
+    top: 220px;
+    width: 300px; /* Reduzi a largura */
+    height: 400px; /* Reduzi a altura */
+    background-color: white;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.card img {
+    position: relative;
+    
+}
+
+    .card img {
+        position: relative;
+        top: -50px; /* Ajustei a posição vertical da imagem */
+        width: 100px; /* Reduzi o tamanho da imagem */
+        height: 100px; /* Reduzi o tamanho da imagem */
+        border-radius: 50%;
+    }
+    
+    .card .content {
+        text-align: center; /* Alinha o texto ao centro horizontalmente */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Alinha o texto ao centro verticalmente */
+        align-items: center;
+        transition: 0.5s;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    
+    .card .content h3 {
+        height: 50px; /* Reduzi a altura do título */
+        margin-bottom: 20px; /* Reduzi a margem inferior */
+        font-size: 2em; /* Reduzi o tamanho do título */
+        color: rgb(0, 4, 255);
+        z-index: 1;
+    }
+    
+    .card .content p {
+        margin-bottom: 10px; /* Reduzi a margem inferior do texto */
+        font-size: 18px; /* Reduzi o tamanho do texto */
+        color: rgb(255, 255, 255);
+        font-weight: 300;
+    }
+    
+    .card .content a {
+        position: relative;
+        display: inline-block;
+        padding: 6px 16px; /* Reduzi o padding do botão */
+        margin-top: 10px; /* Reduzi a margem superior do botão */
+        background: rgb(0, 4, 255);
+        color: black;
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: 500;
+        box-shadow: 0.5px 10px rgba(0, 0, 0, 0.2); /* Reduzi o tamanho da sombra */
+    }
+    
+    .card:hover {
+        transform: translateY(-5px); /* Reduzi a distância do efeito hover */
+    }
+    
+    .card:hover .content {
+        opacity: 1;
+    }
